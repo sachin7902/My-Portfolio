@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11b75ea9c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Sachin Dixit</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- <i class="fa-solid fa-xmark menuicons" onclick="closemenu()"></i> -->
+                </ul>
+                <!-- <i class="fa-solid fa-bars menuicons" onclick="openmenu()"></i> -->
+            </nav>
+            <div class="header-text">
+                <h1>Hi, My name <br> is <span>Sachin</span></h1>
+                <h2>And I'm a <span id="element"></span></h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/img-3.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a final year student of B.TECH (CSE) at I.T.S. Engineering College, Gr. Noida and majoring in Computer Science and Engineering, where I am gaining a strong foundation in theoretical
+                        knowledge and practical skills. I am constantly seeking opportunities to apply what I've learned in the classroom to real-world challenges. Through hands-on projects, internships, andcollaborative
+                        experiences, I aim to sharpen my technical abilities and develop a keen understanding of the industry.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>Programming Languages: C, Python, Core Java</li>
+                            <li>Web Development</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Data Structures</li>
+                            <li>Node.js</li>
+                            
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - present</span> <br>B.Tech (CSE), ITS Engineering College</li>
+                            <li><span>2020</span> <br>12th (78.2%), Vanasthali Public School</li>
+                            <li><span>2018</span> <br>10th (88%), Vanasthali Public School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+                    
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img/netflix.png" alt="">
+                    <div class="layer">
+                        <h3>Netflix Home-Page Clone</h3>
+                        <p>Built with html, css.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/alexon.gif" alt="">
+                    <div class="layer">
+                        <h3>Virtual Assistant(Alexon)</h3>
+                        <p>Built with html, css, javascript.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img/covid.avif" alt="">
+                    <div class="layer">
+                        <h3>Covid-19 Tracker</h3>
+                        <p>Built with html, css, javascript, api, mapbox.
+                            
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Conatct -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> sd9891317@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9582246585</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sachin-dixit-6b289621a" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sachin7902" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/sachindixit3879/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="/Sachin Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sachin. Made with ❤️ by Sachin Dixit.</p>
+        </div>
+    </div>
+
+    <!-- typed.js scripts -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-End Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <!-- custom js -->
+    <script>
+
+        var tablinks = document.getElementsByClassName('tab-links')
+        var tabcontents = document.getElementsByClassName('tab-contents')
+
+        function openTab(tabname) {
+            for (tablink of tablinks) {      // removing active-link class from all tabs 
+                tablink.classList.remove('active-link')
+            }
+            for (tabcontent of tabcontents) {    // removing active-tab class from all tabs
+                tabcontent.classList.remove('active-tab')
+            }
+            // now adding these classes to the clicked tab
+            event.currentTarget.classList.add('active-link')
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+
+        /* var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        } */
+
+    </script>
+
+    <!-- js for contact form -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwm3IbIWQR2tCBqWZD3Np2dRL5jc7NxT68qfmvY7y_UI5BYDTXhlW7-ot7iZK5hCNHI/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(() => {
+                        msg.innerHTML = ""
+                    }, 3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
